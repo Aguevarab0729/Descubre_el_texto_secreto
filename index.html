@@ -8,22 +8,23 @@
 </head>
 <body>
     <header>
-        <img src="imagenes/Logo.svg" alt="Logo Alura">
+        <img src="img/Logo.svg" alt="Logo Alura">
     </header>
-    <main>
-        <section>
-            <h1>Encriptador</h1>
-            <form action="">
-                <input type="text" id="input" placeholder="Escribe tu mensaje">
+    <main class="contenedor-principal">
+        <section class="principal">
+            <div class="uno">
+                <input type="text" id="input" placeholder="Ingresa el texto aquí">
+                <br>
                 <button type="submit" id="encriptar">Encriptar</button>
                 <button type="submit" id="desencriptar">Desencriptar</button>
-            </form>
+            </div>
         </section>
-        <section>
-            <img src="imagenes/Muñeco.png" alt="Encriptador">
-            <p id="output"></p>
-            <input type="text" placeholder="Ingresa el texto que desees encriptar o desencriptar">
-        </section>
+        <aside>
+            <div class="mensaje">
+                <p id="output"></p>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+        </aside>
     </main>
     <script src="app.js"></script>
 </body>
