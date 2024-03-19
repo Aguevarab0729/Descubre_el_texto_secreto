@@ -21,7 +21,7 @@ const modelDesencriptar = {
   "ufat": "u"
 };
 
-//Para encriptar el texto
+// Funcion que se encarga de encriptar el texto ingresado, tomando como referencia el modelo para encriptarlo
 
 function encriptar(texto) {
   let textoEncriptado = "";
@@ -37,5 +37,22 @@ document.getElementById("encriptar").addEventListener("click", () => {
   const texto = textoInput.value;
   const textoEncriptado = encriptar(texto);
   document.getElementById("output").innerText = textoEncriptado;
+});
+
+// Funcion que se encarga de desencriptar el texto ingresado, tomando como referencia el modelo
+function desencriptar(texto) {
+  let textoDesencriptado = textoInput.value;
+  for (let clave in modelDesencriptar) {
+    //Remplaza todas las letras del texto y las reemplaza 
+    const expresionRegular = new RegExp(clave, 'g');
+    textoDesencriptado = textoDesencriptado.replace(expresionRegular, modelDesencriptar[clave]);
+  }
+  console.log(textoDesencriptado);
+  return textoDesencriptado;
 }
-);
+
+document.getElementById("desencriptar").addEventListener("click", () => {
+  const texto = textoInput.value;
+  const textoDesencriptado = desencriptar(texto);
+  document.getElementById("output").innerText = textoDesencriptado;
+});
