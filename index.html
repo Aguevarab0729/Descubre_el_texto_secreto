@@ -12,18 +12,21 @@
     </header>
     <main class="contenedor-principal">
         <section class="principal">
-            <div class="uno">
+            <section class="uno">
                 <input type="text" id="input" placeholder="Ingresa el texto aquí">
                 <br>
                 <button type="submit" id="encriptar">Encriptar</button>
                 <button type="submit" id="desencriptar">Desencriptar</button>
-            </div>
+            </section>
         </section>
         <aside>
-            <div class="mensaje">
+            <section class="mensaje">
                 <p id="output"></p>
-                <p>Ingresa el texto que desees encriptar o desencriptar</p>
-            </div>
+                <section class="mensajeError">
+                    <img src="img/Muñeco.png" alt="Imagen">
+                    <p id="textoError">Ingresa el texto que desees encriptar o desencriptar</p>
+                </section>
+            </section>
         </aside>
     </main>
     <script src="app.js"></script>
