@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 body {
+    margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #F3F5FC;
     color: darkblue;
     line-height: 1.6;
     font-size: 16px;
-    padding-top: 50px;
+    padding-top: 50px; 
 }
 
 header {
@@ -17,16 +18,31 @@ header {
     top: 20px;
 }
 
+header img {
+    width: Fixed (120px)px;
+    height: Fixed (48px)px;
+    top: 40px;
+    left: 40px;
+    gap: 40px;
+    opacity: 0px;
+}
+
 .contenedor-principal {
-    display: flex;
-    width: 100%;
-    padding-left: 240px;
-    margin: 40px 15px 40px 15px;
+    display: grid;
+    grid-template-columns: 60% 30%;
+    gap: 24px;
+    padding: 20px;
+    margin-left: 9%;
 }
+
 .principal {
-    display: flex;
-    width: 100%;
-    padding-left: 240px;
-    margin: 40px 15px 40px 15px;
-    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px;
 }
+
+.aside {
+    background-color: white;
+    padding: 10px;
+}
+
+
