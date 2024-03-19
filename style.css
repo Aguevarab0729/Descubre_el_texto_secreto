@@ -33,16 +33,89 @@ header img {
     gap: 24px;
     padding: 20px;
     margin-left: 9%;
+    height: 80vh;
 }
 
 .principal {
-    background-color: #f0f0f0;
     padding: 10px;
 }
 
-.aside {
+.uno {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#input {
+    width: 80%;
+    height: 50vh; 
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+    padding: 5%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 70%;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    gap: 8px;
+    border-radius: 15px;
+    opacity: 0px;
+}
+
+#encriptar {
+    background-color: #0A3871;
+    color: #D8DFE8;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#desencriptar {
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* #encriptar:hover, #desencriptar:hover {
+    background-color: #3f2e91;
+} */
+.secundario {
     background-color: white;
     padding: 10px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .contenedor-principal {
+        grid-template-columns: 100%;
+        margin-left: 0;
+    }
+
+    .principal,
+    .secundario {
+        width: 100%;
+        margin-bottom: 20px;
+        height: auto;
+    }
 }
 
 
